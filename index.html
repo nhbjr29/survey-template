@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Customer Satisfaction Survey</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id="title">Customer Satisfaction Survey</h1>
+        <p id="description">We are dedicated to providing the best possible products and services to meet your needs. To help us achieve this goal, we would greatly appreciate if you could take a few minutes to complete our customer satisfaction survey.</p>
+        <form id="survey-form" method="post">
+            <fieldset>
+                <label for="name-label">Name: </label>
+                <input id="name-label" type="text" placeholder="Enter your name" required>
+                <label for="email-label">Email: </label>
+                <input id="email-label" type="email" placeholder="Enter your email" required>
+                <label for="number-label">Order ID</label>
+                <input id="number-label" type="text" placeholder="Enter your Order ID" required>
+            </fieldset>
+            <fieldset>
+                <label for="csreview">Please rate the customer experience you received from 1 to 5.
+                    <select name="csreview" id="">
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="csreview1"> Please provide a review so we can make our service better next time.
+                    <textarea name="csreview1" id="" cols="20" rows="10" width="100%"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </body>
+</html>
