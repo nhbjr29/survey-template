@@ -1,0 +1,72 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    background-color: rgb(229, 230, 227);
+    width:100%;
+    height: 100vh;
+    font-family:sans-serif;
+    color: rgb(17, 3, 80);
+    margin:0;
+}
+#title{
+    border-bottom: 4px solid #0084ff;
+    text-align:center;
+    align-items:center;
+    width: 100%;
+    
+}
+#description{
+    margin:0 auto;
+    text-align:center;
+    padding-bottom: 20px;
+    max-width: 500px;
+    min-width: 300px;
+}
+#survey-form{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+fieldset{
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+}
+label{
+    display: block;
+    margin: 0.5rem 0;
+    width:100%;
+}
+select{
+    display: block;
+    margin: 0.5rem 0;
+}
+#tarea{
+    margin-bottom:20px;
+}
+textarea{
+    display: block;
+    margin: 0.5rem 0;
+    padding-bottom: 50px;
+}
+#submit{
+    display:block;
+    width: 30%;
+    min-width:30px;
+    margin:0 auto;
+}
+footer{
+    margin:0 auto;
+    text-align:center;
+    padding-bottom: 20px;
+    max-width: 500px;
+    min-width: 300px;
+}

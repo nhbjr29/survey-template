@@ -4,36 +4,54 @@
         <meta charset="UTF-8">
         <title>Customer Satisfaction Survey</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1 id="title">Customer Satisfaction Survey</h1>
         <p id="description">We are dedicated to providing the best possible products and services to meet your needs. To help us achieve this goal, we would greatly appreciate if you could take a few minutes to complete our customer satisfaction survey.</p>
         <form id="survey-form" method="post">
             <fieldset>
-                <label for="name-label">Name: </label>
-                <input id="name-label" type="text" placeholder="Enter your name" required>
-                <label for="email-label">Email: </label>
-                <input id="email-label" type="email" placeholder="Enter your email" required>
-                <label for="number-label">Order ID</label>
-                <input id="number-label" type="text" placeholder="Enter your Order ID" required>
+                <label for="name-label">Enter your name: 
+                <input id="name-label" name="name-label" type="text" placeholder="Your name" required>
+                </label>
+                <label for="email-label">Enter your Email: 
+                <input id="email-label" name="email-label" type="email" placeholder="Your email" required>
+                </label>
+                <label for="number-label">Enter the Order ID: 
+                <input id="number-label" name="number-label" type="text" placeholder="Your Order ID" required>
+                </label>
             </fieldset>
             <fieldset>
-                <label for="csreview">Please rate the customer experience you received from 1 to 5.
-                    <select name="csreview" id="">
-                        <option value="5">5</option>
-                        <option value="4">4</option>
-                        <option value="3">3</option>
-                        <option value="2">2</option>
-                        <option value="1">1</option>
+                <label for="csreview">Based on your preference, how likely are you to recommend XYZ Restaurants to your family of friends?(Note: Five being the heighest and one is lowest.)
+                    <select name="csreview" id="select-csreview">
+                        <option value="5">5 - Very Satisfied</option>
+                        <option value="4">4 - Partially Satisfied</option>
+                        <option value="3">3 - Satisfied</option>
+                        <option value="2">2 - Unsatisfied</option>
+                        <option value="1">1 - Very Unsatisfied</option>
                     </select>
-                </label>
             </fieldset>
             <fieldset>
-                <label for="csreview1"> Please provide a review so we can make our service better next time.
-                    <textarea name="csreview1" id="" cols="20" rows="10" width="100%"></textarea>
+                </label>
+                <label>How Satisfied were you with your recent visit in the following areas?</label>
+                <label for="taste-quality">Taste / Quality of the meal
+                    <input type="radio" name="satisfaction" id="taste-quality">Good
+                    <input type="radio" name="satisfaction" id="taste-quality">Bad
+                </label>
+                <label for="experience">Experience with staff
+                <input type="radio" name="experience" id="experience">Good
+                    <input type="radio" name="experience" id="experience">Bad</label>
+                <label for="clean">Cleanliness of Restaurant
+                <input type="radio" name="clean" id="clean">Good
+                    <input type="radio" name="clean" id="clean">Bad</label>
+            </fieldset>
+            <fieldset id="tarea">
+                <label for="csreview1"> Please tell us more about your experiences.
+                    <textarea name="csreview1" id="" cols="30" rows="7" maxlength="90" placeholder="Enter your suggestion here..."></textarea>
                 </label>
             </fieldset>
-            <input type="submit">
+            <input id="submit" name="submit" type="submit" value="Submit">
         </form>
+        <footer id="main-footer"><p>Copyright &copy2023; Customer Service Survey Form</p></footer>
     </body>
 </html>
